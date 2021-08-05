@@ -29,14 +29,19 @@ public class LineComparison {
 		
 		Float obj1=new Float(lengthOfLineL1);
 		Float obj2=new Float(lengthOfLineL2);
-		boolean yes=obj1.equals(obj2);
-		if(yes)
+
+		float result=obj1.compareTo(obj2); //using the compareto() method to compare two methods
+		if(result>0)
 		{
-			System.out.println("Lines are equal");
+			System.out.println("Line1 is greater than Line2");
+		}
+		else if(result<0)
+		{
+			System.out.println("Line1 is lesser than Line2");
 		}
 		else
 		{
-			System.out.println("Lines are not equal");
+			System.out.println("Both lines are equal");
 		}
 		
 	}
